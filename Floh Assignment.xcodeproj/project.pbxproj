@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		146CD4CD1ECCC52400AF7A38 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CD4CC1ECCC52400AF7A38 /* Tweet.swift */; };
 		7AAB84311ECC50BE00497F77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB84301ECC50BE00497F77 /* AppDelegate.swift */; };
 		7AAB84361ECC50BE00497F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AAB84341ECC50BE00497F77 /* Main.storyboard */; };
 		7AAB84381ECC50BE00497F77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AAB84371ECC50BE00497F77 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		146CD4CC1ECCC52400AF7A38 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		7AAB842D1ECC50BE00497F77 /* Floh Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Floh Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AAB84301ECC50BE00497F77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AAB84351ECC50BE00497F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		146CD4CE1ECCC52B00AF7A38 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				146CD4CC1ECCC52400AF7A38 /* Tweet.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		146CD4CF1ECCC53200AF7A38 /* Web Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+				7AAB844A1ECC5D0100497F77 /* TwitterData.swift */,
+				7AAB84481ECC533F00497F77 /* FetchTweetWebService.swift */,
+			);
+			name = "Web Service Layer";
+			sourceTree = "<group>";
+		};
 		7AAB84241ECC50BD00497F77 = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +81,8 @@
 			children = (
 				7AAB844C1ECC5E4E00497F77 /* API.plist */,
 				7AAB84301ECC50BE00497F77 /* AppDelegate.swift */,
-				7AAB844A1ECC5D0100497F77 /* TwitterData.swift */,
-				7AAB84481ECC533F00497F77 /* FetchTweetWebService.swift */,
+				146CD4CE1ECCC52B00AF7A38 /* Modal */,
+				146CD4CF1ECCC53200AF7A38 /* Web Service Layer */,
 				7AAB84461ECC519100497F77 /* HomeTableViewController.swift */,
 				7AAB84341ECC50BE00497F77 /* Main.storyboard */,
 				7AAB84371ECC50BE00497F77 /* Assets.xcassets */,
@@ -148,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AAB84491ECC533F00497F77 /* FetchTweetWebService.swift in Sources */,
+				146CD4CD1ECCC52400AF7A38 /* Tweet.swift in Sources */,
 				7AAB844B1ECC5D0100497F77 /* TwitterData.swift in Sources */,
 				7AAB84471ECC519100497F77 /* HomeTableViewController.swift in Sources */,
 				7AAB84311ECC50BE00497F77 /* AppDelegate.swift in Sources */,
@@ -314,6 +334,7 @@
 				7AAB84411ECC50BE00497F77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

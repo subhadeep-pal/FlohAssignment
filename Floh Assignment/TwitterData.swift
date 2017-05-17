@@ -20,4 +20,5 @@ class TwitterData: NSObject {
         return "Basic \(encodedAuthString!.base64EncodedString())"
     }
     
+    static var next_results_url:String? = nil
 }
