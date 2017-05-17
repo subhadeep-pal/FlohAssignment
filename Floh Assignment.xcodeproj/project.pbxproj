@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		7AAB84311ECC50BE00497F77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB84301ECC50BE00497F77 /* AppDelegate.swift */; };
-		7AAB84331ECC50BE00497F77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB84321ECC50BE00497F77 /* ViewController.swift */; };
 		7AAB84361ECC50BE00497F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AAB84341ECC50BE00497F77 /* Main.storyboard */; };
 		7AAB84381ECC50BE00497F77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AAB84371ECC50BE00497F77 /* Assets.xcassets */; };
 		7AAB843B1ECC50BE00497F77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AAB84391ECC50BE00497F77 /* LaunchScreen.storyboard */; };
+		7AAB84471ECC519100497F77 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB84461ECC519100497F77 /* HomeTableViewController.swift */; };
+		7AAB84491ECC533F00497F77 /* FetchTweetWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB84481ECC533F00497F77 /* FetchTweetWebService.swift */; };
+		7AAB844B1ECC5D0100497F77 /* TwitterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB844A1ECC5D0100497F77 /* TwitterData.swift */; };
+		7AAB844D1ECC5E4E00497F77 /* API.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AAB844C1ECC5E4E00497F77 /* API.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7AAB842D1ECC50BE00497F77 /* Floh Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Floh Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AAB84301ECC50BE00497F77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7AAB84321ECC50BE00497F77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7AAB84351ECC50BE00497F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AAB84371ECC50BE00497F77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AAB843A1ECC50BE00497F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AAB843C1ECC50BE00497F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AAB84461ECC519100497F77 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		7AAB84481ECC533F00497F77 /* FetchTweetWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchTweetWebService.swift; sourceTree = "<group>"; };
+		7AAB844A1ECC5D0100497F77 /* TwitterData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterData.swift; sourceTree = "<group>"; };
+		7AAB844C1ECC5E4E00497F77 /* API.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = API.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,11 @@
 		7AAB842F1ECC50BE00497F77 /* Floh Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				7AAB844C1ECC5E4E00497F77 /* API.plist */,
 				7AAB84301ECC50BE00497F77 /* AppDelegate.swift */,
-				7AAB84321ECC50BE00497F77 /* ViewController.swift */,
+				7AAB844A1ECC5D0100497F77 /* TwitterData.swift */,
+				7AAB84481ECC533F00497F77 /* FetchTweetWebService.swift */,
+				7AAB84461ECC519100497F77 /* HomeTableViewController.swift */,
 				7AAB84341ECC50BE00497F77 /* Main.storyboard */,
 				7AAB84371ECC50BE00497F77 /* Assets.xcassets */,
 				7AAB84391ECC50BE00497F77 /* LaunchScreen.storyboard */,
@@ -125,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AAB843B1ECC50BE00497F77 /* LaunchScreen.storyboard in Resources */,
+				7AAB844D1ECC5E4E00497F77 /* API.plist in Resources */,
 				7AAB84381ECC50BE00497F77 /* Assets.xcassets in Resources */,
 				7AAB84361ECC50BE00497F77 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AAB84331ECC50BE00497F77 /* ViewController.swift in Sources */,
+				7AAB84491ECC533F00497F77 /* FetchTweetWebService.swift in Sources */,
+				7AAB844B1ECC5D0100497F77 /* TwitterData.swift in Sources */,
+				7AAB84471ECC519100497F77 /* HomeTableViewController.swift in Sources */,
 				7AAB84311ECC50BE00497F77 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
