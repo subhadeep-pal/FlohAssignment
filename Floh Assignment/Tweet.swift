@@ -12,12 +12,14 @@ class Tweet: NSObject {
     
     let name: String
     let text: String
-    let imageUrl: URL
+    let imageUrl: String
+    let handle: String
     
-    init(name: String, text: String, imageUrl: String) {
+    init(name: String, handle: String, text: String, imageUrl: String) {
         self.name = name
         self.text = text
-        self.imageUrl = URL(string: imageUrl)!
+        self.handle = "@\(handle)"
+        self.imageUrl = imageUrl
     }
 
 }

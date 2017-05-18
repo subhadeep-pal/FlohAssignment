@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		146CD4CD1ECCC52400AF7A38 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CD4CC1ECCC52400AF7A38 /* Tweet.swift */; };
+		7A3F9E3C1ECD7B3C002B54FE /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F9E3B1ECD7B3C002B54FE /* TweetTableViewCell.swift */; };
+		7A3F9E3E1ECD7FEF002B54FE /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F9E3D1ECD7FEF002B54FE /* ImageLoader.swift */; };
+		7A3F9E401ECD9E51002B54FE /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F9E3F1ECD9E51002B54FE /* ShadowView.swift */; };
 		7AAB84311ECC50BE00497F77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB84301ECC50BE00497F77 /* AppDelegate.swift */; };
 		7AAB84361ECC50BE00497F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AAB84341ECC50BE00497F77 /* Main.storyboard */; };
 		7AAB84381ECC50BE00497F77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AAB84371ECC50BE00497F77 /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 
 /* Begin PBXFileReference section */
 		146CD4CC1ECCC52400AF7A38 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		7A3F9E3B1ECD7B3C002B54FE /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		7A3F9E3D1ECD7FEF002B54FE /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		7A3F9E3F1ECD9E51002B54FE /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		7AAB842D1ECC50BE00497F77 /* Floh Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Floh Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AAB84301ECC50BE00497F77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AAB84351ECC50BE00497F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +66,32 @@
 			name = "Web Service Layer";
 			sourceTree = "<group>";
 		};
+		7A3F9E411ECDBA26002B54FE /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7A3F9E3D1ECD7FEF002B54FE /* ImageLoader.swift */,
+				7A3F9E3F1ECD9E51002B54FE /* ShadowView.swift */,
+			);
+			name = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		7A3F9E421ECDBA2E002B54FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A3F9E431ECDBA3B002B54FE /* Home */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7A3F9E431ECDBA3B002B54FE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7A3F9E3B1ECD7B3C002B54FE /* TweetTableViewCell.swift */,
+				7AAB84461ECC519100497F77 /* HomeTableViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		7AAB84241ECC50BD00497F77 = {
 			isa = PBXGroup;
 			children = (
@@ -81,9 +113,10 @@
 			children = (
 				7AAB844C1ECC5E4E00497F77 /* API.plist */,
 				7AAB84301ECC50BE00497F77 /* AppDelegate.swift */,
+				7A3F9E411ECDBA26002B54FE /* Helper Classes */,
 				146CD4CE1ECCC52B00AF7A38 /* Modal */,
 				146CD4CF1ECCC53200AF7A38 /* Web Service Layer */,
-				7AAB84461ECC519100497F77 /* HomeTableViewController.swift */,
+				7A3F9E421ECDBA2E002B54FE /* Controllers */,
 				7AAB84341ECC50BE00497F77 /* Main.storyboard */,
 				7AAB84371ECC50BE00497F77 /* Assets.xcassets */,
 				7AAB84391ECC50BE00497F77 /* LaunchScreen.storyboard */,
@@ -166,11 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3F9E3E1ECD7FEF002B54FE /* ImageLoader.swift in Sources */,
 				7AAB84491ECC533F00497F77 /* FetchTweetWebService.swift in Sources */,
 				146CD4CD1ECCC52400AF7A38 /* Tweet.swift in Sources */,
 				7AAB844B1ECC5D0100497F77 /* TwitterData.swift in Sources */,
+				7A3F9E401ECD9E51002B54FE /* ShadowView.swift in Sources */,
 				7AAB84471ECC519100497F77 /* HomeTableViewController.swift in Sources */,
 				7AAB84311ECC50BE00497F77 /* AppDelegate.swift in Sources */,
+				7A3F9E3C1ECD7B3C002B54FE /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DSRD6624UQ;
 				INFOPLIST_FILE = "Floh Assignment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.learning.subhadeep.Floh-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -308,6 +345,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DSRD6624UQ;
 				INFOPLIST_FILE = "Floh Assignment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.learning.subhadeep.Floh-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
