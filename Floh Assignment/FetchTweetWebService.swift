@@ -12,6 +12,7 @@ protocol FetchTweetDelegate {
     func tweetsFetched(identifier: String, tweets: [Tweet])
     func tweetsFetchedOnScrolling(identifier: String, tweets: [Tweet])
     func errorFetchingTweets(identifier: String, errorMessage: String)
+    func reachedEndOfTweets(identifier: String)
 }
 
 class FetchTweetWebService: NSObject {
@@ -36,18 +37,22 @@ class FetchTweetWebService: NSObject {
         
         var urlString = "\(fetchURLString)"
         if isNextResult {
+            //Get URL for next results
             if let next_results_url = TwitterData.next_results_url {
                 urlString += next_results_url
             } else {
+                // Next results not available
                 //End Scroll
-                
+                self.delegate.reachedEndOfTweets(identifier: self.identifier)
                 return
             }
         } else {
-//            urlString += "?q=%40FlohNetwork%20OR%20from%3AFlohNetwork&count=6"
-            urlString += "?q=%40KKRiders%20OR%20from%3AKKRiders&count=6"
+            //First Load URL
+            urlString += "?q=%40FlohNetwork%20OR%20from%3AFlohNetwork&count=6"
+//            urlString += "?q=%40KKRiders%20OR%20from%3AKKRiders&count=6" //Because FlohNetwork has less tweets
         }
         
+        print(urlString)
         let url = URL(string: urlString)
 
         var urlRequest = URLRequest(url: url!)
@@ -58,11 +63,13 @@ class FetchTweetWebService: NSObject {
         
         let dataTask = urlSession.dataTask(with: urlRequest) { (data, response, error) in
             if let error = error {
+                // Service Call Failed
                 DispatchQueue.main.async { [unowned self] in
                     self.delegate.errorFetchingTweets(identifier: self.identifier, errorMessage: "Service Call Failed \(error.localizedDescription)")
                 }
             } else if let response = response as? HTTPURLResponse {
                 
+                // HTTP Response with proper Status Code
                 if response.statusCode == 200 {
                     do {
                         let responseDict = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! Dictionary<String,Any>
@@ -92,11 +99,13 @@ class FetchTweetWebService: NSObject {
                             }
                         }
                     } catch {
+                        // Error in parsing JSON
                         DispatchQueue.main.async { [unowned self] in
                             self.delegate.errorFetchingTweets(identifier: self.identifier, errorMessage: "JSON Parsing Failed")
                         }
                     }
                 } else {
+                    // INot OK Response
                     DispatchQueue.main.async { [unowned self] in
                         self.delegate.errorFetchingTweets(identifier: self.identifier, errorMessage: "Invalid Service Call Code : \(response.statusCode)")
                     }

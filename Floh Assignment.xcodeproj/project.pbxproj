@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		146CD4CD1ECCC52400AF7A38 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CD4CC1ECCC52400AF7A38 /* Tweet.swift */; };
+		7A2FBB6B1ECECCAC00D8E2D9 /* LoadMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FBB6A1ECECCAC00D8E2D9 /* LoadMoreTableViewCell.swift */; };
 		7A3F9E3C1ECD7B3C002B54FE /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F9E3B1ECD7B3C002B54FE /* TweetTableViewCell.swift */; };
 		7A3F9E3E1ECD7FEF002B54FE /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F9E3D1ECD7FEF002B54FE /* ImageLoader.swift */; };
 		7A3F9E401ECD9E51002B54FE /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F9E3F1ECD9E51002B54FE /* ShadowView.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		146CD4CC1ECCC52400AF7A38 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		7A2FBB6A1ECECCAC00D8E2D9 /* LoadMoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreTableViewCell.swift; sourceTree = "<group>"; };
 		7A3F9E3B1ECD7B3C002B54FE /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		7A3F9E3D1ECD7FEF002B54FE /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		7A3F9E3F1ECD9E51002B54FE /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,15 @@
 			name = "Web Service Layer";
 			sourceTree = "<group>";
 		};
+		7A2FBB6C1ECED6A500D8E2D9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7A3F9E3B1ECD7B3C002B54FE /* TweetTableViewCell.swift */,
+				7A2FBB6A1ECECCAC00D8E2D9 /* LoadMoreTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		7A3F9E411ECDBA26002B54FE /* Helper Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +97,7 @@
 		7A3F9E431ECDBA3B002B54FE /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				7A3F9E3B1ECD7B3C002B54FE /* TweetTableViewCell.swift */,
+				7A2FBB6C1ECED6A500D8E2D9 /* Cells */,
 				7AAB84461ECC519100497F77 /* HomeTableViewController.swift */,
 			);
 			name = Home;
@@ -205,6 +216,7 @@
 				7AAB844B1ECC5D0100497F77 /* TwitterData.swift in Sources */,
 				7A3F9E401ECD9E51002B54FE /* ShadowView.swift in Sources */,
 				7AAB84471ECC519100497F77 /* HomeTableViewController.swift in Sources */,
+				7A2FBB6B1ECECCAC00D8E2D9 /* LoadMoreTableViewCell.swift in Sources */,
 				7AAB84311ECC50BE00497F77 /* AppDelegate.swift in Sources */,
 				7A3F9E3C1ECD7B3C002B54FE /* TweetTableViewCell.swift in Sources */,
 			);
