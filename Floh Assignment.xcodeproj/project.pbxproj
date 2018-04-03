@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		144797E520738BB40055EE5B /* Floh_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144797E420738BB40055EE5B /* Floh_AssignmentTests.swift */; };
 		146CD4CD1ECCC52400AF7A38 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CD4CC1ECCC52400AF7A38 /* Tweet.swift */; };
 		7A2FBB6B1ECECCAC00D8E2D9 /* LoadMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FBB6A1ECECCAC00D8E2D9 /* LoadMoreTableViewCell.swift */; };
 		7A3F9E3C1ECD7B3C002B54FE /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F9E3B1ECD7B3C002B54FE /* TweetTableViewCell.swift */; };
@@ -22,7 +23,20 @@
 		7AAB844D1ECC5E4E00497F77 /* API.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AAB844C1ECC5E4E00497F77 /* API.plist */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		144797E720738BB40055EE5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AAB84251ECC50BD00497F77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AAB842C1ECC50BD00497F77;
+			remoteInfo = "Floh Assignment";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		144797E220738BB40055EE5B /* Floh AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Floh AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		144797E420738BB40055EE5B /* Floh_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floh_AssignmentTests.swift; sourceTree = "<group>"; };
+		144797E620738BB40055EE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		146CD4CC1ECCC52400AF7A38 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		7A2FBB6A1ECECCAC00D8E2D9 /* LoadMoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreTableViewCell.swift; sourceTree = "<group>"; };
 		7A3F9E3B1ECD7B3C002B54FE /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
@@ -41,6 +55,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		144797DF20738BB40055EE5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7AAB842A1ECC50BD00497F77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144797E320738BB40055EE5B /* Floh AssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				144797E420738BB40055EE5B /* Floh_AssignmentTests.swift */,
+				144797E620738BB40055EE5B /* Info.plist */,
+			);
+			path = "Floh AssignmentTests";
+			sourceTree = "<group>";
+		};
 		146CD4CE1ECCC52B00AF7A38 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				7AAB842F1ECC50BE00497F77 /* Floh Assignment */,
+				144797E320738BB40055EE5B /* Floh AssignmentTests */,
 				7AAB842E1ECC50BE00497F77 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				7AAB842D1ECC50BE00497F77 /* Floh Assignment.app */,
+				144797E220738BB40055EE5B /* Floh AssignmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +171,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		144797E120738BB40055EE5B /* Floh AssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 144797EB20738BB40055EE5B /* Build configuration list for PBXNativeTarget "Floh AssignmentTests" */;
+			buildPhases = (
+				144797DE20738BB40055EE5B /* Sources */,
+				144797DF20738BB40055EE5B /* Frameworks */,
+				144797E020738BB40055EE5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				144797E820738BB40055EE5B /* PBXTargetDependency */,
+			);
+			name = "Floh AssignmentTests";
+			productName = "Floh AssignmentTests";
+			productReference = 144797E220738BB40055EE5B /* Floh AssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7AAB842C1ECC50BD00497F77 /* Floh Assignment */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AAB843F1ECC50BE00497F77 /* Build configuration list for PBXNativeTarget "Floh Assignment" */;
@@ -162,10 +212,16 @@
 		7AAB84251ECC50BD00497F77 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Subhadeep Pal";
 				TargetAttributes = {
+					144797E120738BB40055EE5B = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = DSRD6624UQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7AAB842C1ECC50BD00497F77;
+					};
 					7AAB842C1ECC50BD00497F77 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = DSRD6624UQ;
@@ -187,11 +243,19 @@
 			projectRoot = "";
 			targets = (
 				7AAB842C1ECC50BD00497F77 /* Floh Assignment */,
+				144797E120738BB40055EE5B /* Floh AssignmentTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		144797E020738BB40055EE5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7AAB842B1ECC50BD00497F77 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +270,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		144797DE20738BB40055EE5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144797E520738BB40055EE5B /* Floh_AssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7AAB84291ECC50BD00497F77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +295,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		144797E820738BB40055EE5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AAB842C1ECC50BD00497F77 /* Floh Assignment */;
+			targetProxy = 144797E720738BB40055EE5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7AAB84341ECC50BE00497F77 /* Main.storyboard */ = {
@@ -244,6 +324,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		144797E920738BB40055EE5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DSRD6624UQ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Floh AssignmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "learning.subhadeep.Floh-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Floh Assignment.app/Floh Assignment";
+			};
+			name = Debug;
+		};
+		144797EA20738BB40055EE5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DSRD6624UQ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Floh AssignmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "learning.subhadeep.Floh-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Floh Assignment.app/Floh Assignment";
+			};
+			name = Release;
+		};
 		7AAB843D1ECC50BE00497F77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -368,6 +508,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		144797EB20738BB40055EE5B /* Build configuration list for PBXNativeTarget "Floh AssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				144797E920738BB40055EE5B /* Debug */,
+				144797EA20738BB40055EE5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7AAB84281ECC50BD00497F77 /* Build configuration list for PBXProject "Floh Assignment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
